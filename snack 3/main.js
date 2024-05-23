@@ -1,5 +1,5 @@
 'use strict'
-
+//crea un arrey di oggetti con animali
 const animals = [
     {
         nome: 'leone',
@@ -29,6 +29,21 @@ const animals = [
     {
         nome: 'balena',
         famiglia: 'cetacei',
-        classe: 'uccelli'
+        classe: 'mammiferi'
     },
 ]
+
+//crea un arrey per classe mammiferi
+const classeMammiferi = []
+
+//operazione: per ogni oggetto se classe === mammiferi --> push nel nuovo array l'animale
+for (let i = 0; i < animals.length; i++) {
+    const currentAnimal = animals[i];
+
+    if (currentAnimal.classe === 'mammiferi') {
+        classeMammiferi.push(currentAnimal)
+    }
+}
+
+//stampa il nuovo arrey mammiferi
+console.log('I mammiferi sono:', classeMammiferi);
