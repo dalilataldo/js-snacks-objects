@@ -29,6 +29,24 @@ const people = [
     {
         nome: 'Francesca',
         cognome: 'Azzurro',
-        età: 25,
+        età: 18,
     }
 ]
+//creo un nuovo array con info: può guidare o no
+const driversOrNot = []
+
+//operazione: stabilisco chi ha +=18 anni --> push nel nuovo arrey aggiungendo l'info: può guidare, altrimenti non può guidare
+for (let i = 0; i < people.length; i++) {
+    const currentPerson = people[i]
+
+    if (currentPerson.età >= 18) {
+        currentPerson.info = `${currentPerson.nome} ${currentPerson.cognome} può guidare`;
+        driversOrNot.push(currentPerson);
+    }
+    else {
+        currentPerson.info = `${currentPerson.nome} ${currentPerson.cognome} non può guidare`;
+        driversOrNot.push(currentPerson);
+    }
+}
+//stampo il nuovo arrey
+console.log(driversOrNot);
