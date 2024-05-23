@@ -30,7 +30,7 @@ const animals = [
         nome: 'balena',
         famiglia: 'cetacei',
         classe: 'mammiferi'
-    },
+    }
 ]
 
 //crea un arrey per classe mammiferi
