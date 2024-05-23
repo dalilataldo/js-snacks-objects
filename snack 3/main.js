@@ -41,7 +41,7 @@ for (let i = 0; i < animals.length; i++) {
     const currentAnimal = animals[i];
 
     if (currentAnimal.classe === 'mammiferi') {
-        classeMammiferi.push(currentAnimal)
+        classeMammiferi.push(currentAnimal.nome)
     }
 }
 
